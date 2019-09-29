@@ -9,13 +9,13 @@ export class ApiService {
   constructor(private http:HttpClient) { }
   readMessage(data){
     
-    console.log(data);
+   // console.log(data);
     return this.http.post("https://hostang.herokuapp.com/readMsgApi",data);
 
   }
   getMessage()
   {
-    console.log("apiservice");
+   // console.log("apiservice");
     return this.http.get("https://hostang.herokuapp.com/getDataApi");
   }
 }
